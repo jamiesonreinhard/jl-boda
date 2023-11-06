@@ -7,13 +7,27 @@ import Link from "next/link";
 const Transportation = () => {
   const groundTransportationOptions = [
     {
+      title: "Hermanos Roldan Tours",
+      description:
+        "This company was recommended to us through the local expat community in Mexico City. They have various vehicle sizes, and the owner, Luis, speaks great English. Quotes are on a case by case basis.",
+      details: [
+        "- Email: contacto@hermanosroldantours.com",
+        "- Website: www.hermanosroldantours.com",
+        "- Phone: +52-55-3895-3946",
+        "- IG: tours.hermanosroldan",
+        "- Website: www.hermanosroldantours.com"
+      ],
+      image: "/images/shuttle.png",
+      link: "https://hermanosroldantours.com",
+    },
+    {
       title: "Bajo la Montaña Preferred Shuttles",
       description:
         "Our wedding venue frequently works with this shuttle service, and their prices are great, especially if you ride with a group. We highly recommend this option, which includes insurance. If you'd like to use this option, please let us know and we will help to coordinate based on your flight info.",
       details: [
-        "20 passenger van, one way - 11500 MXN (about 640 USD)",
-        "14 passenger van, one way - 10200 MXN (about 570 USD)",
-        "3 passenger car, one way - 5000 MXN (about 280 USD)"
+        "- 20 passenger van, one way - 11500 MXN (about 640 USD)",
+        "- 14 passenger van, one way - 10200 MXN (about 570 USD)",
+        "- 3 passenger car, one way - 5000 MXN (about 280 USD)"
       ],
       image: "/images/shuttle.png",
       link: "",
@@ -51,16 +65,17 @@ const Transportation = () => {
                     href={option.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center space-x-4"
+                    className="flex items-center gap-[60px]"
                   >
-                    <div className="w-[40px] h-[40px] min-w-[40px] max-w-[40px]">
+
+                    <div className="w-[60px] h-[60px] min-w-[60px] max-w-[60px]">
                       <img
                         src={option.image}
                         alt={option.title}
                         className="w-full h-full object-cover"
                       />
                     </div>
-                    <div className="flex flex-col items-start text-left">
+                    <div className="flex flex-col items-start text-left gap-[12px]">
                       <h3 className="font-bold text-lg">{option.title}</h3>
                       <p className="text-gray-600">{option.description}</p>
                       <ul>
@@ -73,9 +88,9 @@ const Transportation = () => {
                 ) : (
                   <div
                     key={option.title}
-                    className="flex items-center gap-[20px]"
+                    className="flex items-center gap-[60px]"
                   >
-                    <div className="w-[40px] h-[40px] min-w-[40px] max-w-[40px]">
+                    <div className="w-[60px] h-[60px] min-w-[60px] max-w-[60px]">
                       <img
                         src={option.image}
                         alt={option.title}
@@ -85,7 +100,7 @@ const Transportation = () => {
                     <div className="flex flex-col items-start text-left gap-[12px]">
                       <h3 className="font-bold text-lg">{option.title}</h3>
                       <p className="text-gray-600">{option.description}</p>
-                      <ul className="list-disc">
+                      <ul>
                         {option?.details?.map((detail, index) => (
                           <li key={index} className="font-bold">{detail}</li>
                         ))}
