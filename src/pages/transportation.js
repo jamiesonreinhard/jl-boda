@@ -9,7 +9,7 @@ const Transportation = () => {
     {
       title: "Hermanos Roldan Tours",
       description:
-        "This company was recommended to us through the local expat community in Mexico City. They have various vehicle sizes, and the owner, Luis, speaks great English. Quotes are on a case by case basis.",
+        "We have personally used Luis's services in the past. His team is trained, trustworthy, insured, and awesome. They have various vehicle sizes, and the owner, Luis, speaks great English. Quotes are on a case by case basis.",
       details: [
         "- Email: contacto@hermanosroldantours.com",
         "- Website: www.hermanosroldantours.com",
@@ -23,7 +23,7 @@ const Transportation = () => {
     {
       title: "Bajo la Montaña Preferred Shuttles",
       description:
-        "Our wedding venue frequently works with this shuttle service, and their prices are great, especially if you ride with a group. We highly recommend this option, which includes insurance. If you'd like to use this option, please let us know and we will help to coordinate based on your flight info.",
+        "Our wedding venue frequently works with this shuttle service, and their prices are great, especially if you ride with a group. This option includes insurance. If you'd like to use this option, please let us know and we will help to coordinate based on your flight info.",
       details: [
         "- 20 passenger van, one way - 11500 MXN (about 640 USD)",
         "- 14 passenger van, one way - 10200 MXN (about 570 USD)",
@@ -31,13 +31,6 @@ const Transportation = () => {
       ],
       image: "/images/shuttle.png",
       link: "",
-    },
-    {
-      title: "Transfeero",
-      description:
-        "This service allows you to book transportation online. They'll take you directly from the CDMX airport to your hotel in Tepoztlan. This works and the online booking is nice, but it's more expensive than the other option.",
-      image: "/images/transfeero.png",
-      link: "https://www.transfeero.com/en",
     }
   ];
 
@@ -65,7 +58,7 @@ const Transportation = () => {
                     href={option.link}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex items-center gap-[60px]"
+                    className="flex flex-col md:flex-row items-center gap-[60px]"
                   >
 
                     <div className="w-[60px] h-[60px] min-w-[60px] max-w-[60px]">
@@ -88,7 +81,7 @@ const Transportation = () => {
                 ) : (
                   <div
                     key={option.title}
-                    className="flex items-center gap-[60px]"
+                    className="flex flex-col md:flex-row items-center gap-[60px]"
                   >
                     <div className="w-[60px] h-[60px] min-w-[60px] max-w-[60px]">
                       <img
