@@ -29,13 +29,6 @@ const Registry = () => {
           >
             Amazon.com.mx
           </Link>
-          <Link
-            href={'https://www.etsy.com/registry/MTEyODk2MTAyfDIwNzAzOTk0Mw'}
-            target="_blank"
-            className="cursor-pointer text-[40px] bg-black rounded-[8px] px-[16px] py-[8px] text-[#d56647]"
-          >
-            Etsy
-          </Link>
         </div>
     </div>
   </Layout>;
