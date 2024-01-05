@@ -7,12 +7,17 @@ const TepoztlanTips = () => {
   const tips = [
     {
       title: "Cerro del Tepozteco",
-      content: "This is a hike that starts in town and tkaes from 45 minutes to an hour, depending on your condition and hiking speed. It is a little bit intense (lots of stairs), so we recommend doing it early so you can rest before the party.",
+      content: "This is a hike that starts in town and takes from 45 minutes to an hour, depending on your condition and hiking speed. It is a little bit intense (lots of stairs), so we recommend doing it early so you can rest before the party.",
       image: "/images/pyramid.png"
     },
     {
+      title: "Temazcal Ceremonies",
+      content: "Check with your hotel or AirBnB about trying this! A Temazcal ceremony is a traditional Mesoamerican sweat lodge ritual that involves a spiritual and physical cleansing process. It typically includes the use of hot stones, herbal steam, chanting, and guided meditations in a dome-shaped structure, symbolizing a return to the womb of Mother Earth for rebirth and healing.",
+      image: "/images/temazcal.jpeg"
+    },
+    {
       title: "Food",
-      content: "Tepoztlán offers a wide variety of culinary options, we recommend trying; Colorines, Chile Gallo, Ciruelo, MesadeOrigen, PanNuestro, AmanecerdelSol",
+      content: "Tepoztlán offers a wide variety of culinary options, we recommend trying; Colorines, Chile Gallo, Ciruelo, Mesade Origen, Pan Nuestro, Amanecer del Sol",
       image: "/images/food.png"
     },
     {

@@ -3,6 +3,7 @@ import MobileNav from './mobile-navbar'
 
 const links = [
     { href: '/', label: 'Home' },
+    { href: '/info', label: 'Last Minute Info' },
     { href: '/story', label: 'Story' },
     { href: '/schedule', label: 'Schedule' },
     { href: '/registry', label: 'Registry' },
@@ -30,8 +31,8 @@ const Navbar = () => {
                 <Link
                     key={link.href}
                     href={link.href}
-                    className="text-white font-bold hover:text-gray-900 transition duration-150 ease-in-out
-                    bg-[#7baac8] px-[8px] py-[4px] rounded-[8px] flex items-center"
+                    className={`text-white font-bold hover:text-gray-900 transition duration-150 ease-in-out
+                    px-[8px] py-[4px] rounded-[8px] flex items-center ${link.href === "/info" ? "bg-[#fe8cec]" : "bg-[#7baac8]"}`}
                 >
                     {link.label}
                 </Link>

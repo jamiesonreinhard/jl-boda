@@ -3,12 +3,26 @@ import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import Layout from '@/components/layout'
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 const Home = () => {
 
   const [viewportWidth, setViewportWidth] = useState(0)
   const [viewportHeight, setViewportHeight] = useState(0)
   const router = useRouter();
+
+  function daysUntilJanuary27_2024() {
+    const today = new Date();
+    const targetDate = new Date('2024-01-27');
+
+    // Calculate the difference in milliseconds
+    const difference = targetDate - today;
+
+    // Convert milliseconds to days (1 day = 24 hours * 60 minutes * 60 seconds * 1000 milliseconds)
+    const days = Math.ceil(difference / (1000 * 60 * 60 * 24));
+
+    return days;
+}
 
   useEffect(() => {
     setViewportWidth(window.innerWidth)
@@ -55,6 +69,15 @@ const Home = () => {
             </div>
             <h5 className="text-[40px] lg:text-[48px]">Tepoztlan, Morelos, Mexico</h5>
             <h5 className="text-[40px] lg:text-[48px]">January 27, 2024</h5>
+            <div className="flex flex-col items-center gap-4 input-font">
+              <h4 className="text-black text-[32px] lg:text-[40px] font-bold">
+                {daysUntilJanuary27_2024()} days to go!
+              </h4>
+              <Link href="/info" className="bg-[#fe8cec] hover:bg-[#f641c0] text-white font-bold py-3 px-6 rounded-full text-lg shadow-lg transform transition duration-500 hover:scale-110">
+                {`Last Minute Info!`}
+              </Link>
+            </div>
+            
           </div>
         </div>
       </Layout>

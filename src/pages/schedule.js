@@ -6,13 +6,13 @@ const Schedule = () => {
   const events = [
     {
       title: "Welcome Drinks",
-      date: "Friday, January 26th, 2024 - 7:00pm to 10:00pm",
+      date: "Friday, January 26th, 2024 - 7:30pm to 10:00pm",
       image: "/images/salsa.jpeg",
       dressCode: "Casual",
     },
     {
       title: "Wedding Ceremony",
-      date: "Saturday, January 27th, 2024 - 3:00pm",
+      date: "Saturday, January 27th, 2024 - 2:30pm",
       image: "/images/ceremony.png",
       dressCode: "Semi-Formal"
     },
