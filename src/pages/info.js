@@ -12,7 +12,7 @@ const LastMinuteInfo = () => {
             gap-[20px] text-left z-[200]"
                 >
                     <h1 className="text-4xl font-bold mb-8 mx-auto">{`Last Minute Info & Tips`}</h1>
-                    <ul class="list-disc bg-white shadow-lg rounded-lg p-6 text-gray-700 text-md sm:text-xl">
+                    <ul class="list-disc text-gray-700 text-md sm:text-xl">
                         <li class="mb-4"><strong>Bring Mexican Pesos!</strong>{` There are some ATM's in Tepoztlán if you need to get more while you're there.`}</li>
                         <li class="mb-4"><strong>There is no Uber in Tepoztlán</strong>{`, so you'll need cash for taking taxis around, including getting back to your hotels on Saturday after the reception. The taxis are safe.`}</li>
                         <li class="mb-4"><strong>Leave your hotel early on Saturday.</strong> There is a busy street market on Saturday and there will be some traffic on your way to the venue. Leave 15-20 minutes early to arrive on time.</li>
