@@ -3,14 +3,14 @@ import MobileNav from './mobile-navbar'
 
 const links = [
     { href: '/', label: 'Home' },
-    { href: '/rsvp', label: 'RSVP' },
+    { href: '/story', label: 'Story' },
     { href: '/schedule', label: 'Schedule' },
     { href: '/registry', label: 'Registry' },
     { href: '/transportation', label: 'Transportation' },
     { href: '/accommodations', label: 'Accommodations' },
-    { href: '/story', label: 'Story' },
     { href: '/tepoztlan', label: 'Tepoztlan' },
-    { href: '/gallery', label: 'Gallery' }
+    { href: '/gallery', label: 'Gallery' },
+    { href: '/rsvp', label: 'RSVP' },
 ];
 
 const Navbar = () => {

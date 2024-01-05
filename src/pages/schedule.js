@@ -8,21 +8,25 @@ const Schedule = () => {
       title: "Welcome Drinks",
       date: "Friday, January 26th, 2024 - 7:00pm to 10:00pm",
       image: "/images/salsa.jpeg",
+      dressCode: "Casual",
     },
     {
       title: "Wedding Ceremony",
       date: "Saturday, January 27th, 2024 - 3:00pm",
       image: "/images/ceremony.png",
+      dressCode: "Semi-Formal"
     },
     {
       title: "Reception",
       date: "Saturday, January 27th, 2024 - 3:30pm to 2:00am",
       image: "/images/dance.png",
+      dressCode: "Semi-Formal"
     },
     {
       title: "Tepoztlan Style Brunch",
       date: "Sunday, January 28th, 2024 - 10:00am to 1:00pm",
       image: "/images/brunch.jpeg",
+      dressCode: "Casual"
     }
   ];
 
@@ -36,9 +40,12 @@ const Schedule = () => {
           <h2 className="text-3xl font-extrabold text-gray-900 tracking-tight sm:text-4xl mb-[16px]">
             Schedule
           </h2>
-          <p className="font-semibold text-xl mb-[40px] text-[#7baac8]">
+          <p className="font-semibold text-xl text-[#7baac8]">
             {`We'll keep you busy, but not too busy. You'll need some free time to
             enjoy the magic of Tepoztlan!`}
+          </p>
+          <p className="font-semibold text-xl mb-[40px] text-black">
+            {`All events will be held at beautiful Bajo la Montaña.`}
           </p>
 
           <div className="container mx-auto px-4">
@@ -68,6 +75,7 @@ const Schedule = () => {
                   <div className="flex flex-col items-start text-left">
                     <h3 className="text-lg font-bold">{event.title}</h3>
                     <p className="text-gray-500">{event.date}</p>
+                    <p className="text-gray-500">Dress code: {event.dressCode}</p>
                   </div>
                 </li>
               ))}
