@@ -24,7 +24,7 @@ const Schedule = () => {
     },
     {
       title: "Tepoztlan Style Brunch",
-      date: "Sunday, January 28th, 2024 - 10:00am to 1:00pm",
+      date: "Sunday, January 28th, 2024 - 10:30am to 1:00pm",
       image: "/images/brunch.jpeg",
       dressCode: "Casual"
     }
